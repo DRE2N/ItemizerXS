@@ -1,0 +1,12 @@
+name: ItemizerDRE
+version: ${project.version}
+main: de.fyreum.itemizerdre.ItemizerDRE
+api-version: 1.16
+authors: [Fyreum]
+description: Konfiguriere deine Items InGame mit Befehlen
+website: https://erethon.de
+commands:
+  itemizerdre:
+    aliases:
+      - id
+    description: Main command
