@@ -12,7 +12,7 @@ public class TitleCommand extends BookDRECommand {
     public TitleCommand() {
         setCommand("title");
         setAliases("t");
-        setHelp("&6/id a&euthor &6t&eitle [&7title&e] &8- &7&oSetzt den Titel");
+        setHelp("&6/id b&eook &6t&eitle [&7title&e] &8- &7&oSetzt den Titel");
     }
 
     @Override

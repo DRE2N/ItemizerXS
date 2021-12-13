@@ -18,7 +18,7 @@ public class AuthorCommand extends BookDRECommand {
     public AuthorCommand() {
         setCommand("author");
         setAliases("a");
-        setHelp("&6/id a&euthor [&7name&e] &8- &7&oSetzt den Autoren");
+        setHelp("&6/id b&eook &6a&euthor [&7name&e] &8- &7&oSetzt den Autoren");
     }
 
     @Override
