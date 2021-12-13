@@ -1,5 +1,6 @@
 package de.fyreum.itemizerxs;
 
+import de.erethon.commons.compatibility.Internals;
 import de.erethon.commons.javaplugin.DREPlugin;
 import de.erethon.commons.javaplugin.DREPluginSettings;
 import de.fyreum.itemizerxs.command.logic.ICommandCache;
@@ -11,8 +12,9 @@ public final class ItemizerXS extends DREPlugin {
 
     public ItemizerXS() {
         settings = DREPluginSettings.builder()
+                .internals(Internals.andHigher(Internals.v1_16_R1))
                 .paper(true)
-                .spigot(true)
+                .permissions(true)
                 .build();
     }
 
