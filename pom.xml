@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.fyreum</groupId>
-    <artifactId>itemizerdre</artifactId>
+    <artifactId>itemizerxs</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>ItemizerDRE</name>
+    <name>ItemizerXS</name>
 
     <description>Konfiguriere deine Items InGame mit Befehlen</description>
     <properties>
@@ -48,7 +48,7 @@
                             <relocations>
                                 <relocation>
                                     <pattern>de.erethon.commons</pattern>
-                                    <shadedPattern>de.fyreum.itemizerdre.util.commons</shadedPattern>
+                                    <shadedPattern>de.fyreum.itemizerxs.util.commons</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
