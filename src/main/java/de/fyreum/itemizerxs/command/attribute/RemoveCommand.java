@@ -23,7 +23,7 @@ public class RemoveCommand extends ItemDRECommand {
         setCommand("remove");
         setAliases("r");
         setMaxArgs(1);
-        setHelp("&6/id r&eemove [&7attr&e|&7slot&e] &8- &7&oEntfernt ein Attribut");
+        setHelp("&6/ii r&eemove [&7attr&e|&7slot&e] &8- &7&oEntfernt ein Attribut");
     }
 
     @Override

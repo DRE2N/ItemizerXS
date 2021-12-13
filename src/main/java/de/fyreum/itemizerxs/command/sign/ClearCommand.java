@@ -12,7 +12,7 @@ public class ClearCommand extends SignDRECommand {
         setCommand("clear");
         setAliases("c");
         setMaxArgs(0);
-        setHelp("&6/id &6s&eign c&elear &8- &7&oLöscht alle Reihen");
+        setHelp("&6/ii &6s&eign c&elear &8- &7&oLöscht alle Reihen");
     }
 
     @Override

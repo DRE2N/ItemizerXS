@@ -25,8 +25,8 @@ public class LoreCommand extends DRECommand {
         setMaxArgs(Integer.MAX_VALUE);
         setConsoleCommand(false);
         setPlayerCommand(true);
-        setPermission("itemizerdre.cmd.lore");
-        setHelp("&6/id l&eore &8- &7&oBefehle rund um die lore eines Items");
+        setPermission("itemizerxs.cmd.lore");
+        setHelp("&6/ii l&eore &8- &7&oBefehle rund um die lore eines Items");
 
         addSubCommands(addCommand, changeCommand, clearCommand, insertCommand, removeCommand);
     }

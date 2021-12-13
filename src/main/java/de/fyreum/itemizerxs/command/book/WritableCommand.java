@@ -13,7 +13,7 @@ public class WritableCommand extends BookDRECommand {
         setAliases("w");
         setMinArgs(0);
         setMaxArgs(0);
-        setHelp("&6/id b&eook &6w&eritable &8- &7&oGibt dir eine bearbeitbare Version");
+        setHelp("&6/ii b&eook &6w&eritable &8- &7&oGibt dir eine bearbeitbare Version");
     }
 
     @Override

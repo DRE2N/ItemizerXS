@@ -16,8 +16,8 @@ public class TypeCommand extends ItemDRECommand {
         setCommand("type");
         setAliases("t", "type", "material");
         setMaxArgs(1);
-        setHelp("&6/id t&eype &e[&7type&e] &8- &7&oSetzt das Material");
-        setPermission("itemizerdre.cmd.type");
+        setHelp("&6/ii t&eype &e[&7type&e] &8- &7&oSetzt das Material");
+        setPermission("itemizerxs.cmd.type");
     }
 
     @Override

@@ -17,7 +17,7 @@ public class InsertCommand extends ItemDRECommand {
         setCommand("insert");
         setAliases("i");
         setMinArgs(2);
-        setHelp("&6/id l&eore &6i&ensert [&7index&e] [&7...&e] &8- &7&oFügt die Zeile vor einer anderen ein");
+        setHelp("&6/ii l&eore &6i&ensert [&7index&e] [&7...&e] &8- &7&oFügt die Zeile vor einer anderen ein");
     }
 
     @Override

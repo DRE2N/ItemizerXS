@@ -23,7 +23,7 @@ public class HelpCommand extends DRECommand {
         setMaxArgs(1);
         setPlayerCommand(true);
         setConsoleCommand(true);
-        setHelp("&6/id &6h&eelp ([&7page&e]) &8- &7&oKurzbeschreibung aller Befehle");
+        setHelp("&6/ii &6h&eelp ([&7page&e]) &8- &7&oKurzbeschreibung aller Befehle");
 
         this.commandCache = commandCache;
     }

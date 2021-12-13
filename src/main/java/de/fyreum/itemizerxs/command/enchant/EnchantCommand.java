@@ -16,8 +16,8 @@ public class EnchantCommand extends DRECommand {
         setMaxArgs(Integer.MAX_VALUE);
         setConsoleCommand(false);
         setPlayerCommand(true);
-        setPermission("itemizerdre.cmd.enchant");
-        setHelp("&6/id e&enchant &8- &7&oBefehle rund um Verzauberungen");
+        setPermission("itemizerxs.cmd.enchant");
+        setHelp("&6/ii e&enchant &8- &7&oBefehle rund um Verzauberungen");
 
         addSubCommands(addCommand, removeCommand);
     }

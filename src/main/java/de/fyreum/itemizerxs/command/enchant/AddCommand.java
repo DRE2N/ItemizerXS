@@ -18,7 +18,7 @@ public class AddCommand extends ItemDRECommand {
         setAliases("a");
         setMinArgs(2);
         setMaxArgs(2);
-        setHelp("&6/id e&enchant &6a&edd [&7ench&e] [&7level&e] &8- &7&oFügt Verzauberung hinzu");
+        setHelp("&6/ii e&enchant &6a&edd [&7ench&e] [&7level&e] &8- &7&oFügt Verzauberung hinzu");
     }
 
     @Override

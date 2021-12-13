@@ -16,7 +16,7 @@ public class AddCommand extends ItemDRECommand {
         setCommand("add");
         setAliases("a");
         setMaxArgs(1);
-        setHelp("&6/id a&edd [&7flag&e] &8- &7&oFügt ein ItemFlag hinzu");
+        setHelp("&6/ii a&edd [&7flag&e] &8- &7&oFügt ein ItemFlag hinzu");
     }
 
     @Override

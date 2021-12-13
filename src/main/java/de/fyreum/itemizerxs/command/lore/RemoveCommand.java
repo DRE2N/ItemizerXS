@@ -16,7 +16,7 @@ public class RemoveCommand extends ItemDRECommand {
         setCommand("remove");
         setAliases("r");
         setMaxArgs(1);
-        setHelp("&6/id l&eore &6r&eemove [&7index&e] &8- &7&oEntfernt eine Zeile");
+        setHelp("&6/ii l&eore &6r&eemove [&7index&e] &8- &7&oEntfernt eine Zeile");
     }
 
     @Override

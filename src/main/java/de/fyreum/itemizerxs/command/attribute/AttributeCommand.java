@@ -16,8 +16,8 @@ public class AttributeCommand extends DRECommand {
         setMaxArgs(Integer.MAX_VALUE);
         setConsoleCommand(false);
         setPlayerCommand(true);
-        setHelp("&6/id a&ettribute &8- &7&oBefehle rund um Attribute");
-        setPermission("itemizerdre.cmd.attribute");
+        setHelp("&6/ii a&ettribute &8- &7&oBefehle rund um Attribute");
+        setPermission("itemizerxs.cmd.attribute");
 
         addSubCommands(addCommand, removeCommand);
     }

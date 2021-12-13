@@ -16,8 +16,8 @@ public class FlagCommand extends DRECommand {
         setMaxArgs(Integer.MAX_VALUE);
         setConsoleCommand(true);
         setPlayerCommand(true);
-        setHelp("&6/id f&elag &8- &7&oBefehle run um ItemFlags");
-        setPermission("itemizerdre.cmd.flag");
+        setHelp("&6/ii f&elag &8- &7&oBefehle run um ItemFlags");
+        setPermission("itemizerxs.cmd.flag");
 
         addSubCommands(addCommand, removeCommand);
     }

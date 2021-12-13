@@ -21,7 +21,7 @@ public class AddCommand extends ItemDRECommand {
         setAliases("a");
         setMinArgs(3);
         setMaxArgs(4);
-        setHelp("&6/id attribute a&edd [&7attr&e] [&7strength&e] [&7operation&e] ([&7slot&e]) &8- &7&oFügt ein Attribut hinzu");
+        setHelp("&6/ii attribute a&edd [&7attr&e] [&7strength&e] [&7operation&e] ([&7slot&e]) &8- &7&oFügt ein Attribut hinzu");
     }
 
     @Override

@@ -15,7 +15,7 @@ public class RemoveCommand extends ItemDRECommand {
     public RemoveCommand() {
         setCommand("remove");
         setAliases("r");
-        setHelp("&6/id r&eemove [&7flag&e] &8- &7&oEntfernt ein ItemFlag");
+        setHelp("&6/ii r&eemove [&7flag&e] &8- &7&oEntfernt ein ItemFlag");
     }
 
     @Override

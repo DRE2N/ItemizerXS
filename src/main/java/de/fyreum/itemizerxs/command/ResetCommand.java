@@ -14,7 +14,7 @@ public class ResetCommand extends ItemDRECommand {
         setAliases("r");
         setMinArgs(0);
         setMaxArgs(0);
-        setHelp("&6/id r&eeset &8- &7&oSetzt die ItemMeta zurück");
+        setHelp("&6/ii r&eeset &8- &7&oSetzt die ItemMeta zurück");
     }
 
     @Override

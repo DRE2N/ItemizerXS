@@ -15,7 +15,7 @@ public class AddCommand extends ItemDRECommand {
     public AddCommand() {
         setCommand("add");
         setAliases("a");
-        setHelp("&6/id l&eore &6a&edd [&7...&e] &8- &7&oFügt die Zeile hinzu");
+        setHelp("&6/ii l&eore &6a&edd [&7...&e] &8- &7&oFügt die Zeile hinzu");
     }
 
     @Override

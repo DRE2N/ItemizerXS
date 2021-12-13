@@ -16,8 +16,8 @@ public class SignCommand extends DRECommand {
         setMaxArgs(Integer.MAX_VALUE);
         setConsoleCommand(false);
         setPlayerCommand(true);
-        setPermission("itemizerdre.cmd.sign");
-        setHelp("&6/id s&eign &8- &7&oBefehle rund um die lore eines Items");
+        setPermission("itemizerxs.cmd.sign");
+        setHelp("&6/ii s&eign &8- &7&oBefehle rund um die lore eines Items");
 
         addSubCommands(clearCommand, setCommand);
     }

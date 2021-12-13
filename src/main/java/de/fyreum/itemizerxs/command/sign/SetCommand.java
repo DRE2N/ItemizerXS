@@ -13,7 +13,7 @@ public class SetCommand extends SignDRECommand {
         setAliases("s", "line");
         setMinArgs(2);
         setMaxArgs(Integer.MAX_VALUE);
-        setHelp("&6/id s&eet [&7row&e] [&8...&e] &8- &7&oSetzt eine Reihe");
+        setHelp("&6/ii s&eet [&7row&e] [&8...&e] &8- &7&oSetzt eine Reihe");
     }
 
     @Override

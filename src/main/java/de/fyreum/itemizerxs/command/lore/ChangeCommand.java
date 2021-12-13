@@ -17,7 +17,7 @@ public class ChangeCommand extends ItemDRECommand {
         setCommand("change");
         setAliases("c");
         setMinArgs(2);
-        setHelp("&6/id l&eore &6c&ehange [&7index&e] [&7...&e] &8- &7&oTauscht eine Zeile aus");
+        setHelp("&6/ii l&eore &6c&ehange [&7index&e] [&7...&e] &8- &7&oTauscht eine Zeile aus");
     }
 
     @Override

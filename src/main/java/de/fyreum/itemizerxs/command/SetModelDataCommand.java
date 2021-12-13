@@ -12,8 +12,8 @@ public class SetModelDataCommand extends ItemDRECommand {
         setCommand("setModelData");
         setAliases("data");
         setMaxArgs(1);
-        setHelp("&6/id &esetModel&6Data &e[&7value&e] &8- &7&oSetzt die CustomModelData");
-        setPermission("itemizerdre.cmd.setcustommodeldata");
+        setHelp("&6/ii &esetModel&6Data &e[&7value&e] &8- &7&oSetzt die CustomModelData");
+        setPermission("itemizerxs.cmd.setcustommodeldata");
     }
 
     @Override

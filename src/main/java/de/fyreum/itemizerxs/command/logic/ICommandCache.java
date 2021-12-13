@@ -17,7 +17,7 @@ import de.fyreum.itemizerxs.command.sign.SignCommand;
 
 public class ICommandCache extends DRECommandCache {
 
-    public static final String LABEL = "itemizerdre";
+    public static final String LABEL = "itemizerxs";
 
     /* commands with sub commands */
     public AttributeCommand attributeCommand = new AttributeCommand();

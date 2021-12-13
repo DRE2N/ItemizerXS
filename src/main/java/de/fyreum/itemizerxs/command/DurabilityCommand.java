@@ -17,8 +17,8 @@ public class DurabilityCommand extends ItemDRECommand {
     public DurabilityCommand() {
         setCommand("durability");
         setAliases("d");
-        setHelp("&6/id d&eurability [&7durability&e] &8- &7&oSetzt die Haltbarkeit");
-        setPermission("itemizerdre.cmd.durabilty");
+        setHelp("&6/ii d&eurability [&7durability&e] &8- &7&oSetzt die Haltbarkeit");
+        setPermission("itemizerxs.cmd.durabilty");
     }
 
     @Override

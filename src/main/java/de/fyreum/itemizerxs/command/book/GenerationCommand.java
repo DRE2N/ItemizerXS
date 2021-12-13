@@ -16,7 +16,7 @@ public class GenerationCommand extends BookDRECommand {
         setCommand("generation");
         setAliases("g");
         setMaxArgs(1);
-        setHelp("&6/id b&eook &6g&eeneration [&7generation&e] &8- &7&oSetzt die Generation");
+        setHelp("&6/ii b&eook &6g&eeneration [&7generation&e] &8- &7&oSetzt die Generation");
     }
 
     @Override

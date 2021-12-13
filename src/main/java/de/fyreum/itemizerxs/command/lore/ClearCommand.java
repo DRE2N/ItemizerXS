@@ -13,7 +13,7 @@ public class ClearCommand extends ItemDRECommand {
         setAliases("c");
         setMinArgs(0);
         setMaxArgs(0);
-        setHelp("&6/id l&eore c&elear &8- &7Löscht die lore");
+        setHelp("&6/ii l&eore c&elear &8- &7Löscht die lore");
     }
 
     @Override

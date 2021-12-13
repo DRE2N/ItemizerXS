@@ -18,8 +18,8 @@ public class BookCommand extends DRECommand {
         setMaxArgs(Integer.MAX_VALUE);
         setConsoleCommand(false);
         setPlayerCommand(true);
-        setHelp("&6/id b&eook &8- &7&oBefehle rund um Bücher");
-        setPermission("itemizerdre.cmd.book");
+        setHelp("&6/ii b&eook &8- &7&oBefehle rund um Bücher");
+        setPermission("itemizerxs.cmd.book");
 
         addSubCommands(titleCommand, authorCommand, generationCommand, writableCommand);
     }

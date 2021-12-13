@@ -12,8 +12,8 @@ public class NameCommand extends ItemDRECommand {
     public NameCommand() {
         setCommand("name");
         setAliases("n", "rename");
-        setHelp("&6/id n&eame [&7name&e] &8- &7&oÄndert den Namen'");
-        setPermission("itemizerdre.cmd.type");
+        setHelp("&6/ii n&eame [&7name&e] &8- &7&oÄndert den Namen'");
+        setPermission("itemizerxs.cmd.type");
     }
 
     @Override

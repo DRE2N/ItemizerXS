@@ -16,7 +16,7 @@ public class RemoveCommand extends ItemDRECommand {
         setCommand("remove");
         setAliases("r");
         setMinArgs(1);
-        setHelp("&6/id e&enchant &6r&eemove [&7ench&e] &8- &7&oEntfernt eine Verzauberung");
+        setHelp("&6/ii e&enchant &6r&eemove [&7ench&e] &8- &7&oEntfernt eine Verzauberung");
     }
 
     @Override
