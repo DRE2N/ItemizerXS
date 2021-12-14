@@ -26,10 +26,9 @@ public class DurabilityCommand extends ItemDRECommand {
         if (args.length != 2) {
             return null;
         }
-        if (!(sender instanceof Player)) {
+        if (!(sender instanceof Player player)) {
             return null;
         }
-        Player player = (Player) sender;
         ItemStack itemStack = player.getInventory().getItemInMainHand();
         List<String> completes = new ArrayList<>();
 

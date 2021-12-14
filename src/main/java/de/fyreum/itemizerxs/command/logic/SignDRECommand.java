@@ -18,11 +18,10 @@ public abstract class SignDRECommand extends DRECommand {
     public void onExecute(String[] args, CommandSender sender) {
         Player player = (Player) sender;
         Block target = player.getTargetBlock(8);
-        if (target == null || !(target.getState() instanceof Sign)) {
+        if (target == null || !(target.getState() instanceof Sign sign)) {
             MessageUtil.sendMessage(player, "&eDu musst ein Schild anschauen, um diesen Befehl ausführen zu dürfen");
             return;
         }
-        Sign sign = (Sign) target.getState();
 
         onExecute(args, player, sign);
         sign.update();
