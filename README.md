@@ -1,5 +1,5 @@
 # ItemizerXS
-[![Build Status](https://travis-ci.com/DRE2N/ItemizerXS.svg?branch=master)](https://travis-ci.com/DRE2N/ItemizerXS)
+[![Build Status](https://app.travis-ci.com/DRE2N/ItemizerXS.svg?branch=master)](https://app.travis-ci.com/DRE2N/ItemizerXS)
 [![codebeat badge](https://codebeat.co/badges/b6e3a916-329e-44cf-a46d-3a000ab9824b)](https://codebeat.co/projects/github-com-dre2n-itemizerdre-master) <br>
 A simple plugin to customize items & signs ingame via commands.
 
