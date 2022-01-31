@@ -12,10 +12,10 @@ A simple plugin to customize items & signs ingame via commands.
 ## Compatibility
 
 ### Server
-ItemizerXS works with Paper 1.16 and higher. This plugin only works with Paper and does not support Spigot or CraftBukkit builds.
+ItemizerXS works with Paper 1.17 and higher. This plugin only works with Paper and does not support Spigot or CraftBukkit builds.
 
-### DRECommons
-[DRECommons](https://github.com/DRE2N/DRECommons) is a util library for common tasks.
+### Bedrock
+[Bedrock](https://github.com/DRE2N/Bedrock) is a utility library for common tasks.
 
 ## Commands
 `/ii` - Lists every plugin command <br>

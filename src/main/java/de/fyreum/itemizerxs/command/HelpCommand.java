@@ -1,9 +1,9 @@
 package de.fyreum.itemizerxs.command;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.erethon.commons.command.CommandCache;
-import de.erethon.commons.command.DRECommand;
-import de.erethon.commons.misc.NumberUtil;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.erethon.bedrock.command.CommandCache;
+import de.erethon.bedrock.command.ECommand;
+import de.erethon.bedrock.misc.NumberUtil;
 import de.fyreum.itemizerxs.ItemizerXS;
 import org.bukkit.command.CommandSender;
 
@@ -12,7 +12,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class HelpCommand extends DRECommand {
+public class HelpCommand extends ECommand {
 
     private final CommandCache commandCache;
 
@@ -34,9 +34,9 @@ public class HelpCommand extends DRECommand {
     }
 
     public static void sendHelp(CommandCache commandCache, String[] args, CommandSender sender) {
-        List<DRECommand> sorted = commandCache.getCommands().stream()
+        List<ECommand> sorted = commandCache.getCommands().stream()
                 .filter(command -> command.senderHasPermissions(sender))
-                .sorted(Comparator.comparing(DRECommand::getCommand))
+                .sorted(Comparator.comparing(ECommand::getCommand))
                 .collect(Collectors.toList());
 
         if (sorted.isEmpty()) {
@@ -44,7 +44,7 @@ public class HelpCommand extends DRECommand {
             return;
         }
 
-        ArrayList<DRECommand> toSend = new ArrayList<>();
+        ArrayList<ECommand> toSend = new ArrayList<>();
 
         int page = 1;
         if (args.length == 2) {
@@ -55,7 +55,7 @@ public class HelpCommand extends DRECommand {
         int min = 0;
 
         int perPage = 5;
-        for (DRECommand dCommand : sorted) {
+        for (ECommand dCommand : sorted) {
             send++;
             if (send >= page * perPage - (perPage - 1) && send <= page * perPage) {
                 min = page * perPage - (perPage - 1);
@@ -67,7 +67,7 @@ public class HelpCommand extends DRECommand {
         MessageUtil.sendPluginTag(sender, ItemizerXS.inst());
         MessageUtil.sendCenteredMessage(sender, "&4&l[ &6" + min + "-" + max + " &4/&6 " + send + " &4|&6 " + page + " &4&l]");
 
-        for (DRECommand dCommand : toSend) {
+        for (ECommand dCommand : toSend) {
             MessageUtil.sendMessage(sender, "&b" + dCommand.getCommand() + "&8 - &7" + dCommand.getHelp());
         }
     }

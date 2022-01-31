@@ -1,12 +1,12 @@
 package de.fyreum.itemizerxs.command.logic;
 
-import de.erethon.commons.chat.MessageUtil;
+import de.erethon.bedrock.chat.MessageUtil;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
 
-public abstract class BookDRECommand extends ItemDRECommand {
+public abstract class BookECommand extends ItemECommand {
 
     @Override
     public final void onExecute(String[] args, Player player, ItemStack itemStack) {

@@ -1,8 +1,7 @@
 package de.fyreum.itemizerxs.command.lore;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.fyreum.itemizerxs.command.logic.ItemDRECommand;
-import de.fyreum.itemizerxs.util.ArgsUtil;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.fyreum.itemizerxs.command.logic.ItemECommand;
 import net.kyori.adventure.text.Component;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -10,7 +9,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.List;
 
-public class AddCommand extends ItemDRECommand {
+public class AddCommand extends ItemECommand {
 
     public AddCommand() {
         setCommand("add");
@@ -24,7 +23,7 @@ public class AddCommand extends ItemDRECommand {
         List<Component> lore = getLore(meta);
 
         String line = getFinalArg(args, 1);
-        lore.add(ArgsUtil.parse(line));
+        lore.add(MessageUtil.parse(line));
 
         meta.lore(lore);
         itemStack.setItemMeta(meta);

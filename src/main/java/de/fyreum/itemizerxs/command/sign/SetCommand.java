@@ -1,12 +1,11 @@
 package de.fyreum.itemizerxs.command.sign;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.fyreum.itemizerxs.command.logic.SignDRECommand;
-import de.fyreum.itemizerxs.util.ArgsUtil;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.fyreum.itemizerxs.command.logic.SignECommand;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 
-public class SetCommand extends SignDRECommand {
+public class SetCommand extends SignECommand {
 
     public SetCommand() {
         setCommand("set");
@@ -27,7 +26,7 @@ public class SetCommand extends SignDRECommand {
         }
         String msg = getFinalArg(args, 2);
         try {
-            sign.line(--row, ArgsUtil.parse(msg));
+            sign.line(--row, MessageUtil.parse(msg));
         } catch(IndexOutOfBoundsException e) {
             MessageUtil.sendMessage(player, "&eDie angegebene Reihe muss zwischen &61-4 &esein");
             return;

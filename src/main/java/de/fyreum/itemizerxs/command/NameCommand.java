@@ -1,13 +1,12 @@
 package de.fyreum.itemizerxs.command;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.fyreum.itemizerxs.command.logic.ItemDRECommand;
-import de.fyreum.itemizerxs.util.ArgsUtil;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.fyreum.itemizerxs.command.logic.ItemECommand;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-public class NameCommand extends ItemDRECommand {
+public class NameCommand extends ItemECommand {
 
     public NameCommand() {
         setCommand("name");
@@ -21,7 +20,7 @@ public class NameCommand extends ItemDRECommand {
         ItemMeta meta = itemStack.getItemMeta();
         String name = getFinalArg(args, 1);
 
-        meta.displayName(ArgsUtil.parse(name));
+        meta.displayName(MessageUtil.parse(name));
         itemStack.setItemMeta(meta);
 
         MessageUtil.sendMessage(player, "&7Name wurde zu '&f" + name + "<reset>&7' geändert");

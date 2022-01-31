@@ -1,7 +1,7 @@
 package de.fyreum.itemizerxs.command.attribute;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.fyreum.itemizerxs.command.logic.ItemDRECommand;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.fyreum.itemizerxs.command.logic.ItemECommand;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.attribute.AttributeModifier;
 import org.bukkit.command.CommandSender;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class AddCommand extends ItemDRECommand {
+public class AddCommand extends ItemECommand {
 
     public AddCommand() {
         setCommand("add");

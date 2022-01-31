@@ -1,12 +1,12 @@
 package de.fyreum.itemizerxs.command.book;
 
-import de.fyreum.itemizerxs.command.logic.BookDRECommand;
+import de.fyreum.itemizerxs.command.logic.BookECommand;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
 
-public class WritableCommand extends BookDRECommand {
+public class WritableCommand extends BookECommand {
 
     public WritableCommand() {
         setCommand("writable");

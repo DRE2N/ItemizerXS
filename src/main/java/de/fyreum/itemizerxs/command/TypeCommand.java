@@ -1,7 +1,7 @@
 package de.fyreum.itemizerxs.command;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.fyreum.itemizerxs.command.logic.ItemDRECommand;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.fyreum.itemizerxs.command.logic.ItemECommand;
 import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -10,7 +10,7 @@ import org.bukkit.inventory.ItemStack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TypeCommand extends ItemDRECommand {
+public class TypeCommand extends ItemECommand {
 
     public TypeCommand() {
         setCommand("type");

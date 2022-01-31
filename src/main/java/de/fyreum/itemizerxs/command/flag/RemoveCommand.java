@@ -1,7 +1,7 @@
 package de.fyreum.itemizerxs.command.flag;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.fyreum.itemizerxs.command.logic.ItemDRECommand;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.fyreum.itemizerxs.command.logic.ItemECommand;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
@@ -10,7 +10,7 @@ import org.bukkit.inventory.ItemStack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RemoveCommand extends ItemDRECommand {
+public class RemoveCommand extends ItemECommand {
 
     public RemoveCommand() {
         setCommand("remove");

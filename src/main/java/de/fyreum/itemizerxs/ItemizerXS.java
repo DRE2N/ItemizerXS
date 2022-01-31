@@ -1,19 +1,18 @@
 package de.fyreum.itemizerxs;
 
-import de.erethon.commons.compatibility.Internals;
-import de.erethon.commons.javaplugin.DREPlugin;
-import de.erethon.commons.javaplugin.DREPluginSettings;
+import de.erethon.bedrock.compatibility.Internals;
+import de.erethon.bedrock.plugin.EPlugin;
+import de.erethon.bedrock.plugin.EPluginSettings;
 import de.fyreum.itemizerxs.command.logic.ICommandCache;
 
-public final class ItemizerXS extends DREPlugin {
+public final class ItemizerXS extends EPlugin {
 
     private static ItemizerXS instance;
     private ICommandCache iCommandCache;
 
     public ItemizerXS() {
-        settings = DREPluginSettings.builder()
-                .internals(Internals.andHigher(Internals.v1_16_R1))
-                .paper(true)
+        settings = EPluginSettings.builder()
+                .internals(Internals.v1_17_R1.andHigher())
                 .permissions(true)
                 .build();
     }

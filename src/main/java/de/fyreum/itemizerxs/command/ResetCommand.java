@@ -1,13 +1,13 @@
 package de.fyreum.itemizerxs.command;
 
-import de.erethon.commons.chat.MessageUtil;
+import de.erethon.bedrock.chat.MessageUtil;
 import de.fyreum.itemizerxs.ItemizerXS;
-import de.fyreum.itemizerxs.command.logic.ItemDRECommand;
+import de.fyreum.itemizerxs.command.logic.ItemECommand;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-public class ResetCommand extends ItemDRECommand {
+public class ResetCommand extends ItemECommand {
 
     public ResetCommand() {
         setCommand("reset");

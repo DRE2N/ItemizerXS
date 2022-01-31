@@ -1,10 +1,10 @@
 package de.fyreum.itemizerxs.command.enchant;
 
-import de.erethon.commons.command.DRECommand;
+import de.erethon.bedrock.command.ECommand;
 import de.fyreum.itemizerxs.command.HelpCommand;
 import org.bukkit.command.CommandSender;
 
-public class EnchantCommand extends DRECommand {
+public class EnchantCommand extends ECommand {
 
     public AddCommand addCommand = new AddCommand();
     public RemoveCommand removeCommand = new RemoveCommand();

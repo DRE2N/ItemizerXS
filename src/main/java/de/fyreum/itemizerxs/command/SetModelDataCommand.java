@@ -1,12 +1,12 @@
 package de.fyreum.itemizerxs.command;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.fyreum.itemizerxs.command.logic.ItemDRECommand;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.fyreum.itemizerxs.command.logic.ItemECommand;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-public class SetModelDataCommand extends ItemDRECommand {
+public class SetModelDataCommand extends ItemECommand {
 
     public SetModelDataCommand() {
         setCommand("setModelData");

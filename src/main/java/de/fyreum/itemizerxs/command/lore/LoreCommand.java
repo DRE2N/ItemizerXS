@@ -1,6 +1,6 @@
 package de.fyreum.itemizerxs.command.lore;
 
-import de.erethon.commons.command.DRECommand;
+import de.erethon.bedrock.command.ECommand;
 import de.fyreum.itemizerxs.command.HelpCommand;
 import net.kyori.adventure.text.Component;
 import org.bukkit.command.CommandSender;
@@ -10,7 +10,7 @@ import org.bukkit.inventory.ItemStack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LoreCommand extends DRECommand {
+public class LoreCommand extends ECommand {
 
     public AddCommand addCommand = new AddCommand();
     public ChangeCommand changeCommand = new ChangeCommand();

@@ -1,7 +1,7 @@
 package de.fyreum.itemizerxs.command.book;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.fyreum.itemizerxs.command.logic.BookDRECommand;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.fyreum.itemizerxs.command.logic.BookECommand;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -10,7 +10,7 @@ import org.bukkit.inventory.meta.BookMeta;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenerationCommand extends BookDRECommand {
+public class GenerationCommand extends BookECommand {
 
     public GenerationCommand() {
         setCommand("generation");

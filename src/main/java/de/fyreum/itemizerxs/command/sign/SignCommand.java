@@ -1,10 +1,10 @@
 package de.fyreum.itemizerxs.command.sign;
 
-import de.erethon.commons.command.DRECommand;
+import de.erethon.bedrock.command.ECommand;
 import de.fyreum.itemizerxs.command.HelpCommand;
 import org.bukkit.command.CommandSender;
 
-public class SignCommand extends DRECommand {
+public class SignCommand extends ECommand {
 
     public ClearCommand clearCommand = new ClearCommand();
     public SetCommand setCommand = new SetCommand();

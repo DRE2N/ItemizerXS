@@ -1,12 +1,12 @@
 package de.fyreum.itemizerxs.command.sign;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.fyreum.itemizerxs.command.logic.SignDRECommand;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.fyreum.itemizerxs.command.logic.SignECommand;
 import net.kyori.adventure.text.Component;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 
-public class ClearCommand extends SignDRECommand {
+public class ClearCommand extends SignECommand {
 
     public ClearCommand() {
         setCommand("clear");

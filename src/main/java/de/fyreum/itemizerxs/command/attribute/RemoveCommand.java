@@ -1,8 +1,8 @@
 package de.fyreum.itemizerxs.command.attribute;
 
 import com.google.common.collect.Multimap;
-import de.erethon.commons.chat.MessageUtil;
-import de.fyreum.itemizerxs.command.logic.ItemDRECommand;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.fyreum.itemizerxs.command.logic.ItemECommand;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.attribute.AttributeModifier;
 import org.bukkit.command.CommandSender;
@@ -17,7 +17,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class RemoveCommand extends ItemDRECommand {
+public class RemoveCommand extends ItemECommand {
 
     public RemoveCommand() {
         setCommand("remove");

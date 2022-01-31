@@ -1,8 +1,7 @@
 package de.fyreum.itemizerxs.command.lore;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.fyreum.itemizerxs.command.logic.ItemDRECommand;
-import de.fyreum.itemizerxs.util.ArgsUtil;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.fyreum.itemizerxs.command.logic.ItemECommand;
 import net.kyori.adventure.text.Component;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -11,7 +10,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.List;
 
-public class InsertCommand extends ItemDRECommand {
+public class InsertCommand extends ItemECommand {
 
     public InsertCommand() {
         setCommand("insert");
@@ -39,7 +38,7 @@ public class InsertCommand extends ItemDRECommand {
 
         String line = getFinalArg(args, 2);
         try {
-            lore.add(--index, ArgsUtil.parse(line));
+            lore.add(--index, MessageUtil.parse(line));
         } catch (IndexOutOfBoundsException e) {
             MessageUtil.sendMessage(player, "&eDer angegebene Index ist zu niedrig oder zu hoch");
             return;

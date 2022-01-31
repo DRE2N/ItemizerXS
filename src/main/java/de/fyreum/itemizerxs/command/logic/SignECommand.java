@@ -1,15 +1,15 @@
 package de.fyreum.itemizerxs.command.logic;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.erethon.commons.command.DRECommand;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.erethon.bedrock.command.ECommand;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public abstract class SignDRECommand extends DRECommand {
+public abstract class SignECommand extends ECommand {
 
-    public SignDRECommand() {
+    public SignECommand() {
         setConsoleCommand(false);
         setPlayerCommand(true);
     }

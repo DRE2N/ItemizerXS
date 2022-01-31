@@ -49,13 +49,13 @@
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                             <artifactSet>
                                 <includes>
-                                    <include>de.erethon.commons:commons-dist</include>
+                                    <include>de.erethon:bedrock</include>
                                 </includes>
                             </artifactSet>
                             <relocations>
                                 <relocation>
-                                    <pattern>de.erethon.commons</pattern>
-                                    <shadedPattern>de.fyreum.itemizerxs.util.commons</shadedPattern>
+                                    <pattern>de.erethon.bedrock</pattern>
+                                    <shadedPattern>de.fyreum.itemizerxs.util.bedrock</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
@@ -99,9 +99,9 @@
         </dependency>
         <!-- Erethon -->
         <dependency>
-            <groupId>de.erethon.commons</groupId>
-            <artifactId>commons-dist</artifactId>
-            <version>6.3.1</version>
+            <groupId>de.erethon</groupId>
+            <artifactId>bedrock</artifactId>
+            <version>1.0.0</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

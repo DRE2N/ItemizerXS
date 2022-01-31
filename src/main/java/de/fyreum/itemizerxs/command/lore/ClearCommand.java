@@ -1,12 +1,12 @@
 package de.fyreum.itemizerxs.command.lore;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.fyreum.itemizerxs.command.logic.ItemDRECommand;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.fyreum.itemizerxs.command.logic.ItemECommand;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-public class ClearCommand extends ItemDRECommand {
+public class ClearCommand extends ItemECommand {
 
     public ClearCommand() {
         setCommand("clear");

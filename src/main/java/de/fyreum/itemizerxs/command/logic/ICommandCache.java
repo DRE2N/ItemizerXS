@@ -1,7 +1,7 @@
 package de.fyreum.itemizerxs.command.logic;
 
-import de.erethon.commons.command.DRECommandCache;
-import de.erethon.commons.javaplugin.DREPlugin;
+import de.erethon.bedrock.command.ECommandCache;
+import de.erethon.bedrock.plugin.EPlugin;
 import de.fyreum.itemizerxs.command.DurabilityCommand;
 import de.fyreum.itemizerxs.command.HelpCommand;
 import de.fyreum.itemizerxs.command.NameCommand;
@@ -15,7 +15,7 @@ import de.fyreum.itemizerxs.command.flag.FlagCommand;
 import de.fyreum.itemizerxs.command.lore.LoreCommand;
 import de.fyreum.itemizerxs.command.sign.SignCommand;
 
-public class ICommandCache extends DRECommandCache {
+public class ICommandCache extends ECommandCache {
 
     public static final String LABEL = "itemizerxs";
 
@@ -34,7 +34,7 @@ public class ICommandCache extends DRECommandCache {
     public ResetCommand resetCommand = new ResetCommand();
     public SetModelDataCommand setModelDataCommand = new SetModelDataCommand();
 
-    public ICommandCache(DREPlugin plugin) {
+    public ICommandCache(EPlugin plugin) {
         super(LABEL, plugin);
 
         addCommand(attributeCommand);

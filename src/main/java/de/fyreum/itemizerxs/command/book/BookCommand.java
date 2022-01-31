@@ -1,10 +1,10 @@
 package de.fyreum.itemizerxs.command.book;
 
-import de.erethon.commons.command.DRECommand;
+import de.erethon.bedrock.command.ECommand;
 import de.fyreum.itemizerxs.command.HelpCommand;
 import org.bukkit.command.CommandSender;
 
-public class BookCommand extends DRECommand {
+public class BookCommand extends ECommand {
 
     public TitleCommand titleCommand = new TitleCommand();
     public AuthorCommand authorCommand = new AuthorCommand();

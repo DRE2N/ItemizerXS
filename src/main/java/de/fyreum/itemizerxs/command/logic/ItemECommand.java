@@ -1,7 +1,7 @@
 package de.fyreum.itemizerxs.command.logic;
 
-import de.erethon.commons.chat.MessageUtil;
-import de.erethon.commons.command.DRECommand;
+import de.erethon.bedrock.chat.MessageUtil;
+import de.erethon.bedrock.command.ECommand;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
@@ -12,9 +12,9 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class ItemDRECommand extends DRECommand {
+public abstract class ItemECommand extends ECommand {
 
-    public ItemDRECommand() {
+    public ItemECommand() {
         setMinArgs(1);
         setMaxArgs(Integer.MAX_VALUE);
         setPlayerCommand(true);
