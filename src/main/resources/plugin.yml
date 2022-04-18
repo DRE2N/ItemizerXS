@@ -1,7 +1,7 @@
 name: ItemizerXS
 version: ${project.version}
-main: de.fyreum.itemizerxs.ItemizerXS
-api-version: 1.17
+main: de.erethon.itemizerxs.ItemizerXS
+api-version: 1.18
 authors: [Fyreum]
 description: Konfiguriere deine Items InGame mit Befehlen
 website: https://erethon.de

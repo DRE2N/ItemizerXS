@@ -6,14 +6,14 @@
 
     <groupId>de.fyreum</groupId>
     <artifactId>itemizerxs</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>ItemizerXS</name>
 
     <description>Konfiguriere deine Items InGame mit Befehlen</description>
     <properties>
-        <java.version>16</java.version>
+        <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -38,7 +38,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.3.0-SNAPSHOT</version>
+                <version>3.3.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -55,7 +55,7 @@
                             <relocations>
                                 <relocation>
                                     <pattern>de.erethon.bedrock</pattern>
-                                    <shadedPattern>de.fyreum.itemizerxs.util.bedrock</shadedPattern>
+                                    <shadedPattern>de.erethon.itemizerxs.bedrock</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
@@ -94,14 +94,14 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.18.1-R0.1-SNAPSHOT</version>
+            <version>1.18.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <!-- Erethon -->
         <dependency>
             <groupId>de.erethon</groupId>
             <artifactId>bedrock</artifactId>
-            <version>1.0.0</version>
+            <version>1.2.1</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
