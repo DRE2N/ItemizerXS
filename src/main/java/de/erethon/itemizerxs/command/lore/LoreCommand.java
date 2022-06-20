@@ -15,6 +15,7 @@ public class LoreCommand extends ECommand {
     public AddCommand addCommand = new AddCommand();
     public ChangeCommand changeCommand = new ChangeCommand();
     public ClearCommand clearCommand = new ClearCommand();
+    public GetCommand getCommand = new GetCommand();
     public InsertCommand insertCommand = new InsertCommand();
     public RemoveCommand removeCommand = new RemoveCommand();
 
@@ -30,7 +31,7 @@ public class LoreCommand extends ECommand {
         setDescription("Befehle rund um die lore eines Items");
         setDefaultHelp();
 
-        addSubCommands(addCommand, changeCommand, clearCommand, insertCommand, removeCommand);
+        addSubCommands(addCommand, changeCommand, clearCommand, getCommand, insertCommand, removeCommand);
     }
 
     @Override

@@ -40,7 +40,7 @@ public class InsertCommand extends ItemECommand {
 
         String line = getFinalArg(args, 2);
         try {
-            lore.add(--index, MessageUtil.parse(line));
+            lore.add(index - 1, MessageUtil.parse(line));
         } catch (IndexOutOfBoundsException e) {
             MessageUtil.sendMessage(player, "&eDer angegebene Index ist zu niedrig oder zu hoch");
             return;
@@ -48,6 +48,6 @@ public class InsertCommand extends ItemECommand {
         meta.lore(lore);
         itemStack.setItemMeta(meta);
 
-        MessageUtil.sendMessage(player, "&7Zeile '&f" + line + "<reset>&7' wurde eingefügt");
+        MessageUtil.sendMessage(player, "&7Zeile '&f<italic>" + line + "<reset>&7' wurde eingefügt");
     }
 }

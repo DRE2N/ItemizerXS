@@ -40,15 +40,14 @@ public class ChangeCommand extends ItemECommand {
 
         String line = getFinalArg(args, 2);
         try {
-            lore.set(--index, MessageUtil.parse(line));
+            lore.set(index - 1, MessageUtil.parse(line));
         } catch (IndexOutOfBoundsException e) {
             MessageUtil.sendMessage(player, "&eDer angegebene Index ist zu niedrig oder zu hoch");
             return;
         }
-
         meta.lore(lore);
         itemStack.setItemMeta(meta);
 
-        MessageUtil.sendMessage(player, "&7Zeile &6" + (index + 1) + " &7wurde zu '&f" + line + "<reset>&7' geändert");
+        MessageUtil.sendMessage(player, "&7Zeile &6" + index + " &7wurde zu '&f<italic>" + line + "<reset>&7' geändert");
     }
 }

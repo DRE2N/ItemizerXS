@@ -30,6 +30,6 @@ public class AddCommand extends ItemECommand {
         meta.lore(lore);
         itemStack.setItemMeta(meta);
 
-        MessageUtil.sendMessage(player, "&7Zeile '&f" + line + "<reset>&7' wurde hinzugefügt");
+        MessageUtil.sendMessage(player, "&7Zeile '&f<italic>" + line + "<reset>&7' wurde hinzugefügt");
     }
 }

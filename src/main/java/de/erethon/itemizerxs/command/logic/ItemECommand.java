@@ -34,7 +34,7 @@ public abstract class ItemECommand extends ECommand {
         Player player = (Player) sender;
         ItemStack itemStack = player.getInventory().getItemInMainHand();
 
-        if (itemStack == null || itemStack.getType() == Material.AIR) {
+        if (itemStack.getType() == Material.AIR) {
             MessageUtil.sendMessage(sender, "&cDu musst ein Item in der Hand halten, um diesen Befehl benutzen zu dürfen");
             return;
         }
