@@ -39,6 +39,7 @@ ItemizerXS works with Paper 1.18 and higher. This plugin only works with Paper a
 `/ii lore add <line>` - Adds the given line to the lore <br>
 `/ii lore change <index> <line>` - Changes the given index line <br>
 `/ii lore clear` - Deletes the item lore <br>
+`/ii lore get` - Copies the given lore line <br>
 `/ii lore insert <index> <line>` - Adds the line before the given index <br>
 `/ii lore remove <index>` - Removes the lore line at the given index <br>
 `/ii name <name>` - Sets the item name <br>

@@ -6,6 +6,7 @@ import net.kyori.adventure.text.Component;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,8 +48,12 @@ public class LoreCommand extends ECommand {
             return null;
         }
         ItemStack itemStack = player.getInventory().getItemInMainHand();
+        ItemMeta meta = itemStack.getItemMeta();
+        if (meta == null) {
+            return null;
+        }
         List<String> completes = new ArrayList<>();
-        List<Component> lore = itemStack.getItemMeta().lore();
+        List<Component> lore = meta.lore();
 
         if (lore == null) {
             lore = new ArrayList<>();
