@@ -11,7 +11,7 @@ public class NameCommand extends ItemECommand {
     public NameCommand() {
         setCommand("name");
         setAliases("n", "rename");
-        setPermission("itemizerxs.cmd.type");
+        setPermission("itemizerxs.cmd.name");
         setUsage("/ii name [name]");
         setDescription("Ändert den Namen");
         setDefaultHelp();

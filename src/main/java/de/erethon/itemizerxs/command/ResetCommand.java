@@ -14,6 +14,7 @@ public class ResetCommand extends ItemECommand {
         setAliases("r");
         setMinArgs(0);
         setMaxArgs(0);
+        setPermission("itemizerxs.cmd.reset");
         setUsage("/ii reset");
         setDescription("Setzt die ItemMeta zurück");
         setDefaultHelp();
