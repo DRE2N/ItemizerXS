@@ -27,14 +27,14 @@ repositories {
 }
 
 dependencies {
-    api("de.erethon:bedrock:1.4.0")
     compileOnly("io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT")
+    implementation("de.erethon:bedrock:1.4.0")
 }
 
 group = "de.fyreum"
 version = "1.3-SNAPSHOT"
 description = "ItemizerXS"
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_21
 
 publishing {
     publications.create<MavenPublication>("maven") {
