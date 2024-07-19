@@ -5,6 +5,7 @@
 plugins {
     `java-library`
     `maven-publish`
+    id("io.github.goooler.shadow") version "8.1.5" // Use fork until shadow has updated to Java 21
 }
 
 repositories {
@@ -28,7 +29,10 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT")
-    implementation("de.erethon:bedrock:1.4.0")
+    implementation("de.erethon:bedrock:1.4.0") {
+        exclude(group = "org.inventivetalent.spiget-update", "bukkit")
+
+    }
 }
 
 group = "de.fyreum"
@@ -39,6 +43,22 @@ java.sourceCompatibility = JavaVersion.VERSION_21
 publishing {
     publications.create<MavenPublication>("maven") {
         from(components["java"])
+    }
+}
+
+tasks {
+    jar {
+        manifest {
+            attributes(
+                "paperweight-mappings-namespace" to "mojang"
+            )
+        }
+    }
+    shadowJar {
+        dependencies {
+            include(dependency("de.erethon:bedrock:1.4.0"))
+        }
+        relocate("de.erethon.bedrock", "de.erethon.questsxl.bedrock")
     }
 }
 
