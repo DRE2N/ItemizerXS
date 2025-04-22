@@ -25,7 +25,7 @@ public final class ItemizerXS extends EPlugin {
 
         getBedrockMessageHandler().setDefaultLanguage("german");
 
-        this.iCommandCache = new ICommandCache(this);
+        this.iCommandCache = new ICommandCache(this, compat.isPapyrus());
         setCommandCache(iCommandCache);
         iCommandCache.register(this);
     }

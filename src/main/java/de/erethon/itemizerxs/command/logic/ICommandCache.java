@@ -22,7 +22,7 @@ public class ICommandCache extends ECommandCache {
     /* commands with sub commands */
     public AttributeCommand attributeCommand = new AttributeCommand();
     public BookCommand bookCommand = new BookCommand();
-    public EnchantCommand enchantCommand = new EnchantCommand();
+    public EnchantCommand enchantCommand; // Causes conflict with Papyrus
     public FlagCommand flagCommand = new FlagCommand();
     public LoreCommand loreCommand = new LoreCommand();
     public SignCommand signCommand = new SignCommand();
@@ -35,11 +35,18 @@ public class ICommandCache extends ECommandCache {
     public SetModelDataCommand setModelDataCommand = new SetModelDataCommand();
 
     public ICommandCache(EPlugin plugin) {
+        this(plugin, false);
+    }
+
+    public ICommandCache(EPlugin plugin, boolean isPapyrus) {
         super(LABEL, plugin);
 
         addCommand(attributeCommand);
         addCommand(bookCommand);
-        addCommand(enchantCommand);
+
+        if (!isPapyrus) {
+            addCommand(enchantCommand = new EnchantCommand());
+        }
         addCommand(flagCommand);
         addCommand(loreCommand);
         addCommand(signCommand);

@@ -10,21 +10,10 @@ plugins {
 
 repositories {
     mavenLocal()
-    maven {
-        url = uri("https://papermc.io/repo/repository/maven-public/")
-    }
-
-    maven {
-        url = uri("https://oss.sonatype.org/content/groups/public/")
-    }
-
-    maven {
-        url = uri("https://erethon.de/repo/")
-    }
-
-    maven {
-        url = uri("https://repo.maven.apache.org/maven2/")
-    }
+    maven("https://repo.papermc.io/repository/maven-public/")
+    maven("https://repo.erethon.de/snapshots/")
+    maven("https://repo.maven.apache.org/maven2/")
+    maven("https://oss.sonatype.org/content/groups/public/")
 }
 
 dependencies {
@@ -35,7 +24,7 @@ dependencies {
     }
 }
 
-group = "de.fyreum"
+group = "de.erethon.itemizerxs"
 version = "1.3-SNAPSHOT"
 description = "ItemizerXS"
 java.sourceCompatibility = JavaVersion.VERSION_21
@@ -58,7 +47,7 @@ tasks {
         dependencies {
             include(dependency("de.erethon:bedrock:1.4.0"))
         }
-        relocate("de.erethon.bedrock", "de.erethon.questsxl.bedrock")
+        relocate("de.erethon.bedrock", "de.erethon.itemizerxs.bedrock")
     }
 }
 

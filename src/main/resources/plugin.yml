@@ -1,5 +1,5 @@
 name: ItemizerXS
-version: ${project.version}
+version: 1.3-SNAPSHOT
 main: de.erethon.itemizerxs.ItemizerXS
 api-version: 1.18
 authors: [Fyreum]
